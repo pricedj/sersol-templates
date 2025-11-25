@@ -1,0 +1,26 @@
+{% extends "templates/home.html" %}
+{% block guide %}
+
+<br><h4 style="text-align:center;">User Guide</h4>
+<p style="text-align:left; max-width: 700px; margin: 0 auto">
+When you log in it should take you straight to your Notebook server. If for some reason this is not the case, you will be able to start/stop your server at the top of this page.
+<br> 
+In your server, the left pane allows you to browse all of your files. These include our pre-installed software. Details of these can be found on the <a href=https://serpentine-h2020.eu/hub>SERPENTINE</a> and <a href=https://soler-horizon.eu/hub>SOLER</a>  hub pages. These pages may be the most convenient way to locate the tool of interest and deploy it with a single click.
+<br><br>
+If you see the 'Launcher' page on the right (see figure below), these buttons do not launch the tools themselves, but correspond only to the installed Python environments. All Notebooks should be launched from the file manager or the website.
+</p>
+<br><p style="text-align:center;"><img src="https://hub-route-serpentine-soler.2.rahtiapp.fi/hub/static/custom/guide_3.png" width=300px></p>
+<br><br>
+<p style="text-align:left; max-width: 700px; margin: 0 auto">
+For example, let's take the <a href=https://hub-route-serpentine-soler.2.rahtiapp.fi/hub/user-redirect/lab/workspaces/auto-8/tree/serpentine/notebooks/solarmach/solarmach.ipynb>Solar-MACH Notebook</a>.
+<br><br>
+A Notebook is essentially a series of cells that contain either markdown text or Python code that you can execute. The currently selected cell is indicated by a vertical bar to the left. You can click the play-shaped button at the top of the Notebook (see figure below) to run the current cell and advance to the next one, or use the keyboard shortcut of Shift+Enter. This is the easiest way to rapidly advance through the Notebook. More options are available in the ‘Run’ menu at the very top (see figure below).
+</p>
+<br><p style="text-align:center;"><img src="https://hub-route-serpentine-soler.2.rahtiapp.fi/hub/static/custom/guide_1.png" width=300px><img src="https://hub-route-serpentine-soler.2.rahtiapp.fi/hub/static/custom/guide_2.png" width=300px></p>
+<br><br>
+<p style="text-align:left; max-width: 700px; margin: 0 auto">
+All of our tools should enable you to run them in their entirety without issues. If you delete any of the pre-installed files, they will be replaced next time you log in to the server.
+<br><br>
+For full documentation, please see the official user guide <a href=https://jupyter-notebook.readthedocs.io/en/stable/notebook.html>here</a>.
+</p>
+{% endblock %}
