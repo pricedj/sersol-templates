@@ -28,4 +28,19 @@ For full documentation, please see the official user guide <a href=https://jupyt
 All repositories are automatically updated when your server is restarted. If you modify a notebook, you are advised to use 'Save Notebook As' (see figure below) to ensure it does not change in unexpected ways and you always receive the latest updates. You can read more about the automatic merging <a href="https://nbgitpuller.readthedocs.io/en/latest/topic/automatic-merging.html">here</a>.
 </p>
 <br><p style="text-align:center;"><img src="https://hub-route-serpentine-soler.2.rahtiapp.fi/hub/static/custom/guide_4.png" width=300px></p>
+<h4 style="text-align:center;">FAQ</h4>
+<ol type="1" style="text-align:left; max-width: 700px; margin: 0 auto">
+  <li>ModuleNotFoundError: No module named x.
+    <br>Please ensure that you have the correct Kernel selected for the notebook you are using as listed above. You can change the kernel by clicking 'Kernel' on the toolbar at the top of the notebook.
+  </li>
+  <li>How do I get a fresh copy of a file?
+    <br>If you rename or delete a file it will be replaced when you next start your notebook server.
+  </li>
+  <li>How do I restart my notebook server?
+    <br>At the very top of this page there will be a 'Stop My Server' button if is running. Once stopped, you will see a 'Start My Server' button. There may be a short delay depending on available resources. 
+  </li>
+  <li>Will my changes to the notebooks be preserved?
+    <br>We use nbgitpuller to provide the notebooks from GitHub. Our changes are merged into your copies each time you start a new notebook server but your changes are preserved in case of a conflict. See <a href="https://nbgitpuller.readthedocs.io/en/latest/topic/automatic-merging.html">here</a> for details. Best practice is described above.
+  </li>
+</ol>
 {% endblock %}
