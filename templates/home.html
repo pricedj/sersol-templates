@@ -19,6 +19,10 @@ $.get("/services/announcement/latest", function(data) {
 </script>
 {% endblock %}
 
+{% block announcement %}
+<div class="container announcement"></div>
+{% endblock %}
+
 {% block main %}
 {{ super() }}
 <br><h4 style="text-align:center;">User Guide</h4>
